@@ -1,20 +1,20 @@
-import React, { component } from 'react';
+import React from 'react';
 import '../App.css';
 
 const Navbar=()=> {
+
     return (
         <header>
             <div>
-            <nav id="navbar">
-                <ul id="nav">
-				    <li><a href="#home">Home</a></li>
+            <nav role="navigation" id="navbar">
+                <ul id="nav"> {/* replace */}
+				    <li><a href="#about">About</a></li>
+					<li><a href="#skills">Skills</a></li>
 					<li><a href="#projects">Projects</a></li>
 					<li><a href="#contact">Contact</a></li>
-					<li><a href="#about">About me</a></li>
 			    </ul>
             </nav>
-        </div>
-            <h1>Chetan Kumar's Portfolio</h1>    
+            </div>
         </header>
     )
 }
