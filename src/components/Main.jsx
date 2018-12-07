@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import '../App.css';
 import Navbar from './Navbar.jsx';
+import Footer from './Footer.jsx';
 
 export default class Main extends Component {
     render() {
@@ -43,6 +44,7 @@ export default class Main extends Component {
                 <div>Resort Booking system</div>
                 </div>
                 </section>
+                <Footer />
             </div>
         )
     }
