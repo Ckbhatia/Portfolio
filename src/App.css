@@ -1,56 +1,201 @@
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 40vmin;
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
-
 /*------------ NavBar ------------*/
 
 #nav {
     list-style-type: none;
     margin: 0;
     padding: 0;
-    /*overflow: hidden;*/
 }
 
 li a {
   display: block;
-  color: crimson;
+  color: rgb(167, 141, 30);
   float: left;
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
-  background-color: black;
 }
 
-/* Change the link color to #111 (black) on hover */
+/* navbar links hover */
 li a:hover {
+  color: cyan;
+  border-radius: 10px;
+  border: 1px solid rgb(167, 141, 30);
+}
+
+
+/*------------- Main intro ---------------*/
+
+.intro {
+  color: rgb(167, 141, 30);
+  text-align: center;
+  height: 473px;
+  width: 100%;
+  overflow: hidden;
+}
+
+/*  heading  */
+
+.intro > h2 {
+  color: cyan;
+  font-size: 2.5em;
+}
+
+/* --------------   Skills   -------------- */
+
+.skills {
+  text-align: center;
+  height: 400px;
+}
+
+.skills > p {
+  color: rgb(167, 141, 30);
+}
+
+/* --------------  Projects  -------------- */
+
+.projects {
+  background-color: #ffffff;
+  text-align: center; 
+  padding: 1em;
+}
+
+
+/*-------------  Project  ---------------*/
+
+.project-container {
+  display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+
+.project {
+  /*background-color: rgb(61, 192, 176);*/
+  background-color: cyan;
+  height: 300px;
+  width: 25%;
+  border-radius: 2px;
+  border: 2px solid black;
+}
+
+.project:hover {
+  box-shadow: 1px 1px 1px;
+}
+
+h3 {
+  color: rgb(255, 255, 255);
+}
+
+h2 {
+  color: rgb(61, 192, 176);
+  font-size: 30pt;
+}
+
+/* -------------- Buttons --------------- */
+
+.project .btn {
+  right: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+}
+
+.btn {
+  color: white;
+  cursor: pointer;
+  background-color: rgb(47, 44, 44);
+  padding: 2px;
+  border-radius: 4px;
+  text-decoration: none;
+  text-align: center;
+}
+.btn:hover {
+  background-color: rgb(2, 2, 2);
+}
+
+/*----------- Footer -------------*/
+
+.social-links {
+  text-align: center;
+  height: 30px;
+  width: 100%;
+}
+
+.link {
   background-color: white;
+  color: rgb(167, 141, 30);
+  border: 1px solid #00ffff;
+  border-radius: 360px;
+  margin: 10px;
+  padding: 10px;
+  text-decoration: none;
+}
+
+.link:hover {
+  color: cyan;
+  background-color: white;
+}
+
+
+/*------------------ Media queries -------------------*/
+/*                 Big screen              */
+@media only screen and (min-width: 901px) {
+  img {
+    height: 200px;
+    width: 200px;
+  }
+  .project {
+    border: red;
+    margin: 60px;
+  }
+}
+
+
+/*        Laptop/desktop screen        */
+@media only screen and (max-width: 900px) {
+  img {
+    height: 172px;
+    width: 172px;
+  }
+  .project {
+    border: red;
+    margin: 60px;
+  }
+}
+
+@media only screen and (max-width: 728px) {
+  img {
+    height: 140px;
+    width: 140px;
+  }
+}
+
+@media only screen and (max-width: 620px) {
+ .project {
+    border: 1px solid green;
+    height: 400px;
+    width: 300px;
+    margin-top: 40px;
+    margin-bottom: 40px;
+ }
+ img {
+   height: 272px;
+   width: 272px;
+ } 
+}
+
+@media only screen and (max-width: 420px) {
+  img {
+    height: 172px;
+    width: 172px;
+  }
+  .container {
+    display: row;
+    columns: auto auto auto auto;
+  }
+  .project {
+    height: 300px;
+    width: 100%;
+    margin: 20px;
+  }
 }
