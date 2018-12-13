@@ -2,13 +2,16 @@ import React, { Component } from 'react';
 import '../App.css';
 import Navbar from './Navbar.jsx';
 import Footer from './Footer.jsx';
+import Projects from './Projects.jsx';
 //Temp import
-import arcadeGame from '../img/arcadeGame.png';
-import restaurantReviews from '../img/restaurantReviews.png';
+import arcadeGame from '../img/restaurantReviews.png';
+//import { FontAwesomeIcons } from '@fortawesome/react-fontawesome';
 
 
 export default class Main extends Component {
+
     render() {
+
         return (
             <div>
                 <Navbar />
@@ -34,54 +37,37 @@ export default class Main extends Component {
                 <h2>Featured Projects</h2>
                 <div className="project-container">
                     <div className="project">
-                    
-                    {/*NOTE: Don't forget to optimise code as DRY before final build */}
                     <h3>React Neighborhood map</h3>
-                    <img src={restaurantReviews} alt="react neighborhood map"/>
-                    <a role="button" className="btn" href="https://" target="_blank" rel="norefer noopener">Github</a>
+                    <img src={arcadeGame} alt="react neighborhood map"/>
+                    <a role="button" className="btn" href="https://" target="_blank" rel="noopener noreferrer">Github</a>
                     </div>
                 <div className="project">
                     <h3>Arcade Game</h3>
                     <img src={arcadeGame} alt="arcade game" />
-                    <a role="button" className="btn" href="https://" target="_blank" rel="norefer noopener">Github</a>
+                    <a role="button" className="btn" href="https://" target="_blank" rel="noopener noreferrer">Github</a>
                     </div>
                 <div className="project"> 
                     <h3>restaurant Reviews</h3>
-                    <a role="button" className="btn" href="https://" target="_blank" rel="norefer noopener">Github</a>
+                    <a role="button" className="btn" href="https://" target="_blank" rel="noopener noreferrer">Github</a>
                 </div>
                 <div className="project">
                     <h3>My reads: Book tracking</h3>
                     <img src={arcadeGame} alt="my reads book tracking" />
-                    <a role="button" className="btn" href="https://" target="_blank" rel="norefer noopener">Github</a>
+                    <a role="button" className="btn" href="https://" target="_blank" rel="noopener noreferrer">Github</a>
                 </div>
                 </div>
                 </section>
                 <section className="projects">
                     <h2>Projects</h2>
                 <div className="project-container">
-                <div className="project">
-                    <h3>Neighorhood maps</h3>
-                    <img src={arcadeGame} alt="my reads book tracking" />
-                    <a role="button" className="btn" href="https://" target="_blank" rel="noopener noreferrer">Github</a>
-                </div>
-                <div className="project">
-                    <h3>Random color picker</h3>
-                    <img src={arcadeGame} alt="my reads book tracking" />
-                    <a role="button" className="btn" href="https://" target="_blank" rel="noopener noreferrer">Github</a>
-                </div>
-                <div className="project">
-                    <h3>Pixel Art maker</h3>
-                    <img src={arcadeGame} alt="my reads book tracking" />
-                    <a role="button" className="btn" href="https://" target="_blank" rel="noopener noreferrer">Github</a>
-                </div>
-                <div className="project">
-                    <h3>Portfolio Project</h3>
-                    <img src={arcadeGame} alt="my reads book tracking" />
-                    <a role="button" className="btn" href="https://" target="_blank" rel="noopener noreferrer">Github</a>
-                </div>
+
+                <Projects />
+
                 </div>
                 </section>
+
                 <Footer />
+
             </div>
         )
     }
