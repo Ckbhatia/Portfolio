@@ -1,20 +1,23 @@
 import React from 'react';
 import '../App.css';
 
+/*Testing */
 function importAll(r) {
     return r.keys().map(r);
   }
+  
 const images = importAll(require.context('./', false, /\.(png|jpe?g|svg)$/));
+console.log(images);
 
 export const FeaturedProjects =()=> { 
         
-    const featuredProjectName = ['React Neighborhood Map', 'Restaurant Reviews App', 'My Reads'];
+    const featuredProjectName = ['React Neighborhood Map', 'Restaurant Reviews App', 'My Reads App', 'Feed Reader Testing'];
     
     return (
-        featuredProjectName.map(name => 
-            <div className="project">
+        featuredProjectName.map((name, index) => 
+            <div key={index} className="project">
                     <h3>{name}</h3>
-                    <img src={images[0]} alt={name}/>
+                    <img src={images[index]} alt={name}/>
                     <a role="button" className="btn" href="https://" target="_blank" rel="noopener noreferrer">Github</a>
                     </div>
             )
@@ -23,7 +26,7 @@ export const FeaturedProjects =()=> {
 
 
 export const Projects =()=> {
-    const projectName = ['React Neighborhood map', 'React My reads', 'Restaurant Reviews App', 'Feed Reader Testing', 'Classic Arcade Game', 'Memory Game', 'Random Color picker', 'Portfolio', 'Pixel Art maker', 'Animal Trading Cards'];
+    const projectName = ['Classic Arcade Game', 'Memory Game', 'Random Color picker', 'Portfolio', 'Pixel Art maker', 'Animal Trading Cards'];
 
     return (
             projectName.map((project, index) => (
