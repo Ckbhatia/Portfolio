@@ -2,9 +2,9 @@ import React, { Component } from 'react';
 import '../App.css';
 import Navbar from './Navbar.jsx';
 import Footer from './Footer.jsx';
-import Projects from './Projects.jsx';
+import {Projects, FeaturedProjects} from './Projects.jsx';
+
 //Temp import
-import arcadeGame from '../img/restaurantReviews.png';
 //import { FontAwesomeIcons } from '@fortawesome/react-fontawesome';
 
 
@@ -33,36 +33,18 @@ export default class Main extends Component {
                 <p>CSS3</p>
                 <p>(coming-up)</p>
                 </section>
+                
                 <section className="projects">
                 <h2>Featured Projects</h2>
                 <div className="project-container">
-                    <div className="project">
-                    <h3>React Neighborhood map</h3>
-                    <img src={arcadeGame} alt="react neighborhood map"/>
-                    <a role="button" className="btn" href="https://" target="_blank" rel="noopener noreferrer">Github</a>
-                    </div>
-                <div className="project">
-                    <h3>Arcade Game</h3>
-                    <img src={arcadeGame} alt="arcade game" />
-                    <a role="button" className="btn" href="https://" target="_blank" rel="noopener noreferrer">Github</a>
-                    </div>
-                <div className="project"> 
-                    <h3>restaurant Reviews</h3>
-                    <a role="button" className="btn" href="https://" target="_blank" rel="noopener noreferrer">Github</a>
-                </div>
-                <div className="project">
-                    <h3>My reads: Book tracking</h3>
-                    <img src={arcadeGame} alt="my reads book tracking" />
-                    <a role="button" className="btn" href="https://" target="_blank" rel="noopener noreferrer">Github</a>
-                </div>
+                    <FeaturedProjects />
                 </div>
                 </section>
+                
                 <section className="projects">
                     <h2>Projects</h2>
                 <div className="project-container">
-
                 <Projects />
-
                 </div>
                 </section>
 
