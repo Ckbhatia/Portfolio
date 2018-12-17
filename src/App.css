@@ -22,17 +22,20 @@ li a:hover {
   color: rgb(61, 192, 176);
   border-radius: 10px;
   border: 1px solid rgb(167, 141, 30);
+  padding: 15px;
 }
 
 
 /*------------- Main intro ---------------*/
 
 .intro {
-  color: rgb(167, 141, 30);
+  font-family:  "Alegreya Sans", sans-serif;
+  color: white;/*temp rgb(167, 141, 30);*/
   text-align: center;
-  height: 473px;
+  height: 100%;
   width: 100%;
   overflow: hidden;
+  background-color: rgb(143, 3, 3);/*temp*/
 }
 
 h1 {
@@ -46,6 +49,11 @@ h1 {
   font-size: 2.5em;
 }
 
+.intro > p {
+  font-size: 1.4em;
+  margin-left: 8%;
+  margin-right: 8%;
+}
 /* --------------   Skills   -------------- */
 
 .skills {
@@ -78,7 +86,7 @@ h1 {
 .project {
   /*background-color: rgb(61, 192, 176);*/
   background-image: linear-gradient(141deg, #6cc7a0 0%, #1fc8db 51%, #2cb5e8 75%);
-  height: 300px;
+  height: 312px;
   width: 35%;
   border-radius: 2px;
   box-shadow: 2px 2px 2px 2px rgb(153, 128, 128);
@@ -97,19 +105,41 @@ h2 {
   font-size: 30pt;
 }
 
+/*Figcaption Testing*/
+
+
+
 /* -------------- Buttons --------------- */
 
 .btn {
   color: white;
   cursor: pointer;
-  background-color: rgb(47, 44, 44);
+  background-color: rgb(2, 2, 2);
   padding: 2px;
   border-radius: 4px;
   text-decoration: none;
 }
 .btn:hover {
-  background-color: rgb(2, 2, 2);
+  background-color: transparent;
+  border: 0.6px solid black;
 }
+
+/*  BUtton 2 (LIVE)  */
+.btn2 {
+  color: white;
+  cursor: pointer;
+  background-color: crimson;
+  padding: 2px;
+  border-radius: 2px;
+  text-decoration: none;
+  margin-left: 4px;
+}
+.btn2:hover {
+  background-color: transparent;
+  border: 0.6px solid crimson;
+}
+
+
 
 /*----------- Footer -------------*/
 
@@ -136,27 +166,38 @@ h2 {
 
 
 /*------------------ Media queries -------------------*/
+
+
+
 /*                 Big screen              */
-@media only screen and (min-width: 901px) {
+@media only screen and (min-width: 980px) {
   img {
     height: 220px;
-    width: 220px;
+    width: 322px;
   }
   .project {
-    border: red;
     margin: 60px;
   }
 }
 
+/*------------ Break point ------------*/
+@media only screen and (max-width: 979px) {
+  img {
+    height: 220px;
+    width: 310px;
+  }
+  .project {
+    margin: 60px;
+  }
+}
 
 /*        Laptop/desktop screen        */
 @media only screen and (max-width: 900px) {
   img {
-    height: 172px;
-    width: 172px;
+    height: 200px;
+    width: 260px;
   }
   .project {
-    border: red;
     margin: 60px;
   }
   h2 {
@@ -167,16 +208,22 @@ h2 {
   }
 }
 
-@media only screen and (max-width: 728px) {
+@media only screen and (max-width: 780px) {
   img {
-    height: 140px;
-    width: 140px;
+    height: 180px;
+    width: 240px;
+  }
+}
+
+@media only screen and (max-width: 750px) {
+  img {
+    height: 160px;
+    width: 200px;
   }
 }
 
 @media only screen and (max-width: 620px) {
  .project {
-    border: 1px solid green;
     height: 400px;
     width: 300px;
     margin-top: 40px;
@@ -190,8 +237,8 @@ h2 {
 
 @media only screen and (max-width: 420px) {
   img {
-    height: 172px;
-    width: 172px;
+    height: 195px;
+    width: 249px;
   }
   .container {
     display: row;
