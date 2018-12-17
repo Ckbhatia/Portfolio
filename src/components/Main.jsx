@@ -9,7 +9,7 @@ import {Projects, FeaturedProjects} from './Projects.jsx';
 
 
 export default class Main extends Component {
-
+    
     render() {
 
         return (
@@ -20,10 +20,11 @@ export default class Main extends Component {
                         <h1>Chetan Kumar</h1>
                         <p>A self tought programmer</p>
                         <h2>About</h2>
-                        <p>Hi, there I am chetan kumar, a passionate programmer. I am curious to learning various parts of tech.....(coming soon)
-                        </p>
-                        <p>My story of passion...(coming soon)</p>
-                        <p>I have completed different courses to get expertise on these technologies.</p>
+                        <p>Hi, there I am chetan kumar, a passionate programmer.</p>
+                        <p>I am learning various parts of tech by my keen interest. I started my journey as front end web developer by just learning HTML and CSS. After that i got introduced to the Javascript programming language. It's totally fun to play with the code, design and features etc.</p>
+                        <p>I have completed my Front End developer Nanodegree Udacity course by google india scholarship.</p>
+                        <p>Recently, I got another scholarship from Facebook-Udacity for Deep learning with Pytorch</p>
+                        <p>Currently Learning: Full stack <br />Deep learning</p>
                     </div>
                 </main>
                 <section className="skills">
