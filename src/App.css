@@ -126,19 +126,17 @@ h2 {
 
 /*  BUtton 2 (LIVE)  */
 .btn2 {
-  color: white;
+  color: crimson;
+  font-weight: bold;
   cursor: pointer;
-  background-color: crimson;
   padding: 2px;
   border-radius: 2px;
   text-decoration: none;
   margin-left: 4px;
 }
 .btn2:hover {
-  background-color: transparent;
-  border: 0.6px solid crimson;
+  color: white;
 }
-
 
 
 /*----------- Footer -------------*/
