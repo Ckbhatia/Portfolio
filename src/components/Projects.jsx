@@ -47,8 +47,9 @@ export const Projects =()=> {
             projectsName.map((project, index) => (
             <div key={index} className="project">
             <div className="part1">
-            <h3>{project}</h3>  
-            <img src={images[index]} alt={project}/>
+            <h3>{project}</h3> 
+            {/* Added index + 4 to skip the some images */} 
+            <img src={images[4+index]} alt={project}/>
             </div>
             <div className="part2">
             {/* Button for gihub and live view the projects */}
