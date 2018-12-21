@@ -86,7 +86,7 @@ h1 {
 .project {
   /*background-color: rgb(61, 192, 176);*/
   background-image: linear-gradient(141deg, #6cc7a0 0%, #1fc8db 51%, #2cb5e8 75%);
-  height: 312px;
+  height: 290px;
   width: 35%;
   border-radius: 2px;
   box-shadow: 2px 2px 2px 2px rgb(153, 128, 128);
@@ -180,7 +180,7 @@ h2 {
 /*                 Big screen              */
 @media only screen and (min-width: 980px) {
   img {
-    height: 220px;
+    height: 190px;
     width: 322px;
   }
   .project {
@@ -191,21 +191,37 @@ h2 {
 /*------------ Break point ------------*/
 @media only screen and (max-width: 979px) {
   img {
-    height: 220px;
+    height: 180px;
     width: 310px;
   }
   .project {
+    height: 280px;
+    width: 35%;
     margin: 60px;
+  }
+}
+
+/*        Width 940px         */
+@media only screen and (max-width: 940px) {
+  img {
+    height: 160px;
+    width: 280px;
+  }
+  .project {
+    height: 260px;
+    width: 35%;
   }
 }
 
 /*        Laptop/desktop screen        */
 @media only screen and (max-width: 900px) {
   img {
-    height: 200px;
-    width: 260px;
+    height: 150px;
+    width: 250px;
   }
   .project {
+    height: 235px;
+    width: 35%;
     margin: 60px;
   }
   h2 {
@@ -216,48 +232,137 @@ h2 {
   }
 }
 
+/* -------- width 780 -------- */
 @media only screen and (max-width: 780px) {
   img {
-    height: 180px;
-    width: 240px;
+    height: 130px;
+    width: 220px;
+  }
+  .project {
+    height: 220px;
+    width: 35%;
+    margin: 40px;
   }
 }
 
+/* -------- width 750 -------- */
 @media only screen and (max-width: 750px) {
   img {
-    height: 160px;
+    height: 120px;
     width: 200px;
+  }
+  .project {
+    height: 205px;
+    width: 35%;
+    margin: 40px;
   }
 }
 
+/* ------- width 620 -------- */
 @media only screen and (max-width: 620px) {
+  img {
+    height: 100px;
+    width: 180px;
+  }
  .project {
-    height: 400px;
-    width: 300px;
-    margin-top: 40px;
-    margin-bottom: 40px;
+    height: 190px;
+    width: 35%;
  }
- img {
-   height: 272px;
-   width: 272px;
- } 
 }
 
+/* ------- width 560 -------- */
+@media only screen and (max-width: 560px) {
+  img {
+    height: 95px;
+    width: 170px;
+  }
+ .project {
+    height: 180px;
+    width: 35%;
+ }
+}
+
+/* ------- width 526 -------- */
+@media only screen and (max-width: 526px) {
+  img {
+    height: 90px;
+    width: 160px;
+  }
+ .project {
+    height: 175px;
+    width: 35%;
+ }
+}
+
+/* ------- width 480 -------- */
+@media only screen and (max-width: 480px) {
+  img {
+    height: 95px;
+    width: 150px;
+  }
+ .project {
+    height: 180px;
+    width: 35%;
+ }
+}
+
+/* ------- width 471 -------- */
+@media only screen and (max-width: 471px) {
+  img {
+    height: 80px;
+    width: 140px;
+  }
+ .project {
+    height: 185px;
+ }
+}
+
+/* ------- width 440 -------- */
+@media only screen and (max-width: 440px) {
+  img {
+    height: 80px;
+    width: 130px;
+  }
+ .project {
+    height: 185px;
+ }
+}
 @media only screen and (max-width: 420px) {
   img {
-    height: 195px;
-    width: 249px;
+    height: 100px;
+    width: 180px;
   }
   .container {
     display: row;
     columns: auto auto auto auto;
   }
   .project {
-    height: 300px;
-    width: 100%;
-    margin: 20px;
+    height: 180px;
+    width: 60%;
+    margin: 1em;
   }
   h3 {
-    font-size: 16pt;
+    font-size: 12pt;
+  }
+  .btn {
+    font-size: 10pt;
+  }
+}
+@media only screen and (max-width: 320px) {
+  img {
+    height: 100px;
+    width: 160px;
+  }
+  .project {
+    height: 170px;
+    width: 60%;
+    margin: 1em;
+  }
+  h3 {
+    font-size: 10pt;
+  }
+  .intro > p {
+    font-size: 12pt;
+    font-weight: 1px;
   }
 }
