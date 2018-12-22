@@ -11,6 +11,9 @@ import {Projects, FeaturedProjects} from './Projects.jsx';
 export default class Main extends Component {
     
     render() {
+        
+        const skills = ["HTML5" ,"JavaScript", "CSS3", "React", "VanilaJs", "jQuery",
+         "Python", "Gulp", "Responsive", "Git", "Github", "Bootstrap 4", "Sql","Jasmine Testing", "Heroku", "HTML Canvas", "Shell", "Sass"];
 
         return (
             <div>
@@ -29,10 +32,10 @@ export default class Main extends Component {
                 </main>
                 <section className="skills">
                 <h2>Skills</h2>
-                <p>JavaScript</p>
-                <p>HTML5</p>
-                <p>CSS3</p>
-                <p>(coming-up)</p>
+                {/* Create skills dynamic */}
+                 {skills.map((skill, index) => (
+                    <span key={index}>{skill}</span>
+                ))}
                 </section>
                 
                 <section className="projects">
