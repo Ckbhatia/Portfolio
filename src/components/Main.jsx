@@ -13,7 +13,7 @@ export default class Main extends Component {
     render() {
         
         const skills = ["HTML5" ,"JavaScript", "CSS3", "React", "VanilaJs", "jQuery",
-         "Python", "Gulp", "Responsive", "Git", "Github", "Bootstrap 4", "Sql","Jasmine Testing", "Heroku", "HTML Canvas", "Shell", "Sass"];
+         "Python", "Gulp", "CSS Grid", "Flex box", "Git", "Github", "Bootstrap 4", "Sql","Jasmine Testing", "Heroku", "HTML Canvas", "Shell", "Sass"];
 
         return (
             <div>

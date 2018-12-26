@@ -58,11 +58,19 @@ h1 {
 
 .skills {
   text-align: center;
-  height: 400px;
+  height: 100%;
+  margin-left: 10px;
+  margin-right: 10px;
 }
 
-.skills > p {
-  color: rgb(167, 141, 30);
+.skills > span {
+  color: rgb(255, 255, 255);
+  background-color: rgb(61, 192, 176);
+  margin: 1em;
+  padding: 0.5em;
+  width: 6em;
+  border-radius: 4px;
+  display: inline-block;
 }
 
 /* --------------  Projects  -------------- */
