@@ -9,9 +9,7 @@ function importAll(r) {
 const images = importAll(require.context('../img/projects', false, /\.(png|jpe?g|svg)$/));
 
 //Experiments
-const buttonStyle = {
-    color: 'transparent'
-};
+
 
 export const FeaturedProjects =()=> { 
         
