@@ -19,7 +19,7 @@ export default class Main extends Component {
             <div>
                 <Navbar />
                 <main id="main">
-                    <div className="intro">
+                    <div id="#about" className="intro">
                         <h1>Chetan Kumar</h1>
                         <p>A self tought programmer</p>
                         <h2>About</h2>
@@ -30,15 +30,15 @@ export default class Main extends Component {
                         <p>Currently Learning: Full stack <br />Deep learning</p>
                     </div>
                 </main>
-                <section className="skills">
+                <section id="skills" className="skills">
                 <h2>Skills</h2>
                 {/* Create skills dynamic */}
                  {skills.map((skill, index) => (
                     <span key={index}>{skill}</span>
                 ))}
                 </section>
-                
-                <section className="projects">
+                {/* Id: projects used for just navigation */}
+                <section id="projects" className="projects">
                 <h2>Featured Projects</h2>
                 <div className="project-container">
                     <FeaturedProjects />

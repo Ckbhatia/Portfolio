@@ -23,8 +23,8 @@ export const FeaturedProjects =()=> {
     const details = [['Find Neighborhood places'] ,['Get restaurant details'], ['My Reads book tracking app'], ['RSS Feedreader application testing'], ['Classic Arcade game']];
 
                 //Array of tech names for the projects
-    const techUsed = [['React, HTML, CSS, Webpack, Google Maps API'], ['Mapbox Api, HTML, CSS Grids, Service Workers'], ['React, CSS Grids, Babel, Webpack'], ['Jasmine, HTML, CSS, JavaScript'], 'jQuery',
-                    'HTML Canvas', 'Bootstrap', 'API','Google Maps'];
+    const techUsed = [['React, HTML, CSS, Webpack, Maps API'], ['Mapbox Api, HTML, CSS Grids, Service Workers'], ['React, CSS Grids, Babel, Webpack'], ['Jasmine, HTML, CSS, JS'], 'jQuery',
+                    'HTML Canvas', 'Bootstrap', 'API',' Maps API'];
 
 
     return (
@@ -66,7 +66,7 @@ export const Projects =()=> {
                     ['Simple Card moc.']];
 
     //Array of tech names for the projects
-    const techUsed = [['HTML Canvas, CSS, OOP, JavaScript'], ['HTML5, CSS, JavaScript, CSS Animation'], ['React, CSS, Babel, Webpack'], ['HTML, CSS, Bootstrap'], ['HTML Canvas, jQuery, javaScript, CSS'],
+    const techUsed = [['HTML Canvas, CSS, OOP, JS'], ['HTML5, CSS, JS, CSS Animation'], ['React, CSS, Babel, Webpack'], ['HTML, CSS, Bootstrap'], ['HTML Canvas, jQuery, JS, CSS'],
                     ['HTML, CSS']];
 
     return (

@@ -1,8 +1,6 @@
 import React, { Component } from 'react';
 import '../App.css';
-//import {NavListMob, NavList} from './NavList.jsx';
 
-//Don't forget to get that functionality
 
 class Navbar extends Component {
     constructor(props) {
@@ -41,10 +39,10 @@ class Navbar extends Component {
 
                 <nav role="navigation" id='nav-container'>
                     <ul className={currentClass}>
-                    {console.log(`'This is first nav value = ${currentClass}`)}
-                    {listNames.map((listName, index) => (
-                            <li key={index}><a href={`#${listName.toLowerCase()}`}>{listName}</a></li>
-                            ))}
+                        {console.log(`'This is first nav value = ${currentClass}`)}
+                        {listNames.map((listName, index) => (
+                        <li key={index}><a href={`#${listName.toLowerCase()}`}>{listName}</a></li>
+                        ))}
 			        </ul>
                  </nav>
             </header>
@@ -62,8 +60,8 @@ class Navbar extends Component {
                     <div>
                     <nav role="navigation" className="navbar">
                         <ul className="navbar"> {/* replace */}
-                        {console.log(`This is for desktop Value: ${currentClass}`)}
-                        {listNames.map((listName, index) => (
+                            {console.log(`This is for desktop Value: ${currentClass}`)}
+                            {listNames.map((listName, index) => (
                             <li key={index}><a href={`#${listName.toLowerCase()}`}>{listName}</a></li>
                             ))}
 			            </ul>
