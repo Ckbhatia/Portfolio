@@ -1,3 +1,9 @@
+
+/* Added this for smooth scrolling */
+html {
+  scroll-behavior: smooth;
+}
+
 /*------------- Experiment Ground ---------*/
 .container {
   display: none; /* Check this */
@@ -58,7 +64,7 @@ li a:hover {
   height: 100%;
   width: 100%;
   overflow: hidden;
-  background-color: white;/*temp*/
+  background-color: white;
 }
 
 h1 {
