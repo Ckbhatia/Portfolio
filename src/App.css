@@ -1,15 +1,25 @@
-
-/* Added this for smooth scrolling */
-html {
-  scroll-behavior: smooth;
+/*------ Body ---------*/
+body, html {
+  width: 100%;
+  position: relative;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth; /* Added this for smooth scrolling */
 }
 
 /*------------- Experiment Ground ---------*/
-.container {
-  display: none; /* Check this */
-  cursor: pointer;
-}
 
+/*--- Note: this is for experiment some features ---*/
+/*------------ NavBar ------------*/
+.container {
+  display: none;
+  cursor: pointer;
+  position: fixed;
+  background-color: rgba(255, 255, 255, 0.767);
+  width: 100%;
+  z-index: 1001;
+}
 .bar1, .bar2, .bar3 {
   width: 35px;
   height: 5px;
@@ -17,81 +27,67 @@ html {
   margin: 6px 2px 2px 15px;
   transition: 0.4s;
 }
-
 .change .bar1 {
   -webkit-transform: rotate(-45deg) translate(-9px, 6px);
   transform: rotate(-45deg) translate(-9px, 6px);
 }
-
-.change .bar2 {opacity: 0;}
-
+.change .bar2 {
+ opacity: 0;
+}
 .change .bar3 {
   -webkit-transform: rotate(45deg) translate(-8px, -8px);
   transform: rotate(45deg) translate(-8px, -8px);
 }
-/*--- Note: this is for experiment some features  ---*/
-
-/*------------ NavBar ------------*/
-
 .navbar {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  position: fixed;
+  display: inline-flex;
+  width: 100%;
+  background-color: rgba(255, 255, 255, 0.767);
+  z-index: 1000; /* For stacking */
 }
-
-
-
 /* navbar links hover */
 li a:hover {
   color: rgb(61, 192, 176);
   border-radius: 10px;
   border: 1px solid rgb(167, 141, 30);
-  padding: 15px;
+  padding: 0.5em 1em;
 }
-
-
 /* -------- NavBar for desktop / tab --------- */
-
-
-
-
 /*------------- Main intro ---------------*/
-
+#main {
+  padding-top: 3em;
+}
 .intro {
-  font-family:  "Alegreya Sans", sans-serif;
-  color: rgb(167, 141, 30);/*temp rgb(167, 141, 30);*/
+  font-family: "Alegreya Sans", sans-serif;
+  color: rgb(167, 141, 30);
   text-align: center;
   height: 100%;
   width: 100%;
   overflow: hidden;
-  background-color: white;
 }
-
 h1 {
   font-size: 2em;
 }
-
-/*  Heading  */
-
+/* Heading */
 .intro > h2 {
   color: rgb(61, 192, 176);
   font-size: 2.5em;
 }
-
 .intro > p {
   font-size: 1.4em;
   margin-left: 8%;
   margin-right: 8%;
 }
-/* --------------   Skills   -------------- */
-
+/* -------------- Skills -------------- */
 .skills {
   text-align: center;
   height: 100%;
   margin-left: 10px;
   margin-right: 10px;
 }
-
 .skills > span {
   color: rgb(255, 255, 255);
   background-color: rgb(61, 192, 176);
@@ -101,60 +97,49 @@ h1 {
   border-radius: 4px;
   display: inline-block;
 }
-
-/* --------------  Projects  -------------- */
-
+/* -------------- Projects -------------- */
 .projects {
   background-color: #ffffff;
-  text-align: center; 
+  text-align: center;
   padding: 1em;
 }
-
-
-/*-------------  Project  ---------------*/
-
+/*------------- Project ---------------*/
 .project-container {
   display: flex;
-	flex-direction: row;
-	flex-wrap: wrap;
-	justify-content: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
 }
-
 .project {
-  /*background-color: rgb(61, 192, 176);*/
+ /*background-color: rgb(61, 192, 176);
+ */
   background-image: linear-gradient(141deg, #6cc7a0 0%, #1fc8db 51%, #2cb5e8 75%);
   height: 290px;
   width: 35%;
   border-radius: 2px;
   box-shadow: 2px 2px 2px 2px rgb(153, 128, 128);
 }
-
 .project:hover {
   box-shadow: 4px 4px 4px 2px rgb(153, 128, 128);
 }
-
 h3 {
   color: rgb(255, 255, 255);
 }
-
 h2 {
   color: rgb(61, 192, 176);
   font-size: 30pt;
 }
-
 .projText {
   color: white;
   font-size: 1em;
 }
-
-/*----------- Transition effect  --------------*/
+/*----------- Transition effect --------------*/
 .prj {
   background-color: transparent;
   width: 300px;
   height: 200px;
   perspective: 1000px;
 }
-
 /* position the front and back side */
 .prj {
   position: relative;
@@ -164,12 +149,10 @@ h2 {
   transition: transform 0.8s;
   transform-style: preserve-3d;
 }
-
 /* Flip when you move the mouse over the flip box container */
 .project:hover .prj {
   transform: rotateY(180deg);
 }
-
 /* Position the front and back side */
 .project-front, .project-back {
   position: absolute;
@@ -177,7 +160,6 @@ h2 {
   height: 100%;
   backface-visibility: hidden;
 }
-
 /* Style the back side */
 .project-back {
   background-color: rgb(123, 126, 129);
@@ -185,13 +167,8 @@ h2 {
   border-radius: 4px;
   transform: rotateY(180deg);
 }
-
 /*Figcaption Testing*/
-
-
-
 /* -------------- Buttons --------------- */
-
 .btn {
   color: white;
   cursor: pointer;
@@ -204,8 +181,7 @@ h2 {
   background-color: transparent;
   border: 0.6px solid black;
 }
-
-/*  BUtton 2 (LIVE)  */
+/* BUtton 2 (LIVE) */
 .btn2 {
   color: white;
   font-weight: bold;
@@ -218,16 +194,12 @@ h2 {
 .btn2:hover {
   color: rgba(255, 0, 0, 0.815);
 }
-
-
 /*----------- Footer -------------*/
-
 .social-links {
   text-align: center;
   height: 30px;
   width: 100%;
 }
-
 .link {
   background-color: white;
   color: rgb(167, 141, 30);
@@ -237,12 +209,10 @@ h2 {
   padding: 10px;
   text-decoration: none;
 }
-
 .link:hover {
   color: cyan;
   background-color: white;
 }
-
 #footerText {
   color: white;
   font-family: Georgia, 'Times New Roman', Times, serif;
@@ -253,283 +223,263 @@ h2 {
   padding: 8px;
   margin-top: 8px;
 }
-
 /*------------------ Media queries -------------------*/
-
 /* Only for Navbar */
 @media only screen and (max-width: 1500px) {
- /* Navbar */
+  /*-------- Navbar ---------*/
   li a {
-    font-size: 1.2em;
-    display: block;
-    color: rgb(167, 141, 30);
-    float: left;
-    text-align: center;
-    padding: 16px;
-    text-decoration: none;
-    margin: 2px;
-  }
-  /* These are defined just for replace the default styles of browser */
-ul, menu, dir {
-    display: block;
-    list-style-type: none;
-    margin-block-start: 0;
-    margin-block-end: 0;
-    margin-inline-start: 0;
-    margin-inline-end: 0;
-    padding-inline-start: 0;
+      font-size: 1.2em;
+      display: block;
+      color: rgb(167, 141, 30);
+      float: left;
+      text-align: center;
+      padding: 0.5em 1em;
+      text-decoration: none;
+      margin: 2px;
+ }
+ /* These are defined just for replace the default styles of browser */
+  ul, menu, dir {
+      display: block;
+      list-style-type: none;
+      margin-block-start: 0;
+      margin-block-end: 0;
+      margin-inline-start: 0;
+      margin-inline-end: 0;
+      padding-inline-start: 0;
+ }
 }
-}
-
-
-/*                 Big screen              */
+/* Big screen */
 @media only screen and (min-width: 980px) {
   img {
-    height: 190px;
-    width: 322px;
-  }
+      height: 190px;
+      width: 322px;
+ }
   .project {
-    margin: 60px;
-  }
+      margin: 60px;
+ }
 }
-
 /*------------ Break point ------------*/
 @media only screen and (max-width: 979px) {
-
   img {
-    height: 180px;
-    width: 310px;
-  }
+      height: 180px;
+      width: 310px;
+ }
   .project {
-    height: 280px;
-    width: 35%;
-    margin: 60px;
-  }
+      height: 280px;
+      width: 35%;
+      margin: 60px;
+ }
 }
-
-/*        Width 940px         */
+/* Width 940px */
 @media only screen and (max-width: 940px) {
   img {
-    height: 160px;
-    width: 280px;
-  }
+      height: 160px;
+      width: 280px;
+ }
   .project {
-    height: 260px;
-    width: 35%;
-  }
+      height: 260px;
+      width: 35%;
+ }
 }
-
-/*        Laptop/desktop screen        */
+/* Laptop/desktop screen */
 @media only screen and (max-width: 900px) {
   img {
-    height: 150px;
-    width: 250px;
-  }
+      height: 150px;
+      width: 250px;
+ }
   .project {
-    height: 235px;
-    width: 35%;
-    margin: 60px;
-  }
+      height: 235px;
+      width: 35%;
+      margin: 60px;
+ }
   h2 {
-    font-size: 25pt;
-  }
+      font-size: 25pt;
+ }
   h3 {
-    font-size: 12pt;
-  }
+      font-size: 12pt;
+ }
 }
-
 /* -------- width 780 -------- */
 @media only screen and (max-width: 780px) {
   img {
-    height: 130px;
-    width: 220px;
-  }
+      height: 130px;
+      width: 220px;
+ }
   .project {
-    height: 220px;
-    width: 35%;
-    margin: 40px;
-  }
+      height: 220px;
+      width: 35%;
+      margin: 40px;
+ }
 }
-
 /* -------- width 750 -------- */
 @media only screen and (max-width: 750px) {
   img {
-    height: 120px;
-    width: 200px;
-  }
+      height: 120px;
+      width: 200px;
+ }
   .project {
-    height: 205px;
-    width: 35%;
-    margin: 40px;
-  }
+      height: 205px;
+      width: 35%;
+      margin: 40px;
+ }
 }
-
 /* ------- width 620 -------- */
 @media only screen and (max-width: 620px) {
   img {
-    height: 100px;
-    width: 180px;
-  }
- .project {
-    height: 190px;
-    width: 35%;
+      height: 100px;
+      width: 180px;
+ }
+  .project {
+      height: 190px;
+      width: 35%;
  }
 }
-
+/* media query for Hamburger */
+@media only screen and (max-width: 575px) {
+  #nav-container {
+    text-align: center;
+ }
+  .container {
+      display: inline-block;
+ }
+  .navbar {
+      display: none;
+ }
+ /* Mobile view id */
+  .nav {
+      width: 100%;
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+      display: grid;
+      position: fixed;
+      background-color: rgba(255, 255, 255, 0.767);
+ }
+  li a {
+      font-size: 1.2em;
+      display: block;
+      color: rgb(167, 141, 30);
+      float: none;
+      text-align: center;
+      padding: 10px;
+      text-decoration: none;
+      margin: 2px;
+ }
+ /* navbar links hover */
+  li a:hover {
+      color: rgb(61, 192, 176);
+      border-radius: 0;
+      border: none;
+      padding: 10px;
+ }
+}
 /* ------- width 560 -------- */
 @media only screen and (max-width: 560px) {
   img {
-    height: 95px;
-    width: 170px;
-  }
- .project {
-    height: 180px;
-    width: 35%;
+      height: 95px;
+      width: 170px;
+ }
+  .project {
+      height: 180px;
+      width: 35%;
  }
 }
-
 /* ------- width 526 -------- */
 @media only screen and (max-width: 526px) {
   img {
-    height: 90px;
-    width: 160px;
-  }
- .project {
-    height: 175px;
-    width: 35%;
+      height: 90px;
+      width: 160px;
+ }
+  .project {
+      height: 175px;
+      width: 35%;
  }
 }
-
 /* ------- width 480 -------- */
 @media only screen and (max-width: 480px) {
   img {
-    height: 95px;
-    width: 150px;
-  }
- .project {
-    height: 180px;
-    width: 35%;
+      height: 95px;
+      width: 150px;
+ }
+  .project {
+      height: 180px;
+      width: 35%;
  }
 }
-
 /* ------- width 471 -------- */
 @media only screen and (max-width: 471px) {
   img {
-    height: 80px;
-    width: 140px;
-  }
- .project {
-    height: 185px;
+      height: 80px;
+      width: 140px;
+ }
+  .project {
+      height: 185px;
+      width: 50%;
  }
 }
-
 /* ------- width 440 -------- */
 @media only screen and (max-width: 440px) {
   img {
-    height: 80px;
-    width: 130px;
-  }
- .project {
-    height: 185px;
+      height: 80px;
+      width: 130px;
  }
- h1 {
-   font-size: 1.8em;
- }
- .intro > h2 {
-  font-size: 2.2em;
-}
- .intro > p {
-  font-size: 1.3rem;
-  margin-left: 5%;
-  margin-right: 5%;
-  }
- .container {
-    display: inline-block;
-    }
- .navbar {
-    display: none;
-  }
-  /* Mobile view id */
-
-  .nav {
-    width: 100%;
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    display: grid;
-  }  
-  li a {
-    font-size: 1.2em;
-    display: block;
-    color: rgb(167, 141, 30);
-    float: none;
-    text-align: center;
-    padding: 10px;
-    text-decoration: none;
-    margin: 2px;
-  }
-
-  /* navbar links hover */
-  li a:hover {
-    color: rgb(61, 192, 176);
-    border-radius: 0;
-    border: none;
-    padding: 10px;
-  }
-}
-
-@media only screen and (max-width: 420px) {
-
-
-#nav-container {
-  text-align: center;
-}
-
-.intro > p {
-  font-size: 1.2rem;
-  margin-left: 4%;
-  margin-right: 4%;
-}
-
-
-
-/* Above Testing mode */
-
-  img {
-    height: 100px;
-    width: 180px;
-  }
-  .container {
-    display: row;
-    columns: auto auto auto auto;
-  }
   .project {
-    height: 180px;
-    width: 60%;
-    margin: 1em;
-  }
+      height: 185px;
+ }
+  h1 {
+      font-size: 1.8em;
+ }
+  .intro > h2 {
+      font-size: 2.2em;
+ }
+  .intro > p {
+      font-size: 1.3rem;
+      margin-left: 5%;
+      margin-right: 5%;
+ }
+}
+@media only screen and (max-width: 420px) {
+  .intro > p {
+      font-size: 1.2rem;
+      margin-left: 4%;
+      margin-right: 4%;
+ }
+  img {
+      height: 100px;
+      width: 180px;
+ }
+  .container {
+      display: row;
+      columns: auto auto auto auto;
+ }
+  .project {
+      height: 180px;
+      width: 60%;
+      margin: 1em;
+ }
   h3 {
-    font-size: 12pt;
-  }
+      font-size: 12pt;
+ }
   .btn {
-    font-size: 10pt;
-  }
+      font-size: 10pt;
+ }
 }
 @media only screen and (max-width: 320px) {
   img {
-    height: 100px;
-    width: 160px;
-  }
+      height: 46%;
+      width: 90%;
+ }
   .project {
-    height: 170px;
-    width: 60%;
-    margin: 1em;
-  }
+      max-height: 192px;
+      min-height: 182px;
+      width: 60%;
+      margin: 1em;
+ }
   h3 {
-    font-size: 10pt;
-  }
+      font-size: 10pt;
+ }
   .intro > p {
-    font-size: 12pt;
-    font-weight: 1px;
-  }
+      font-size: 12pt;
+      font-weight: 1px;
+ }
 }
