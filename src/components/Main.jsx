@@ -19,7 +19,7 @@ export default class Main extends Component {
             <div>
                 <Navbar />
                 <main id="main">
-                    <div id="#about" className="intro">
+                    <div id="about" className="intro">
                         <h1>Chetan Kumar</h1>
                         <p>A self tought programmer</p>
                         <h2>About</h2>
