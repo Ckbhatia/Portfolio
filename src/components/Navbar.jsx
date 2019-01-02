@@ -35,16 +35,15 @@ class Navbar extends Component {
                         <div className="bar2"></div>
                         <div className="bar3"></div>
                         {console.log(`this is bar class: ${changeClass}`)}
+                        <nav role="navigation" id='nav-container'>
+                            <ul className={currentClass}>
+                                {console.log(`'This is first nav value = ${currentClass}`)}
+                                {listNames.map((listName, index) => (
+                                <li key={index}><a href={`#${listName.toLowerCase()}`}>{listName}</a></li>
+                                ))}
+			                </ul>
+                        </nav>
                     </div>
-
-                <nav role="navigation" id='nav-container'>
-                    <ul className={currentClass}>
-                        {console.log(`'This is first nav value = ${currentClass}`)}
-                        {listNames.map((listName, index) => (
-                        <li key={index}><a href={`#${listName.toLowerCase()}`}>{listName}</a></li>
-                        ))}
-			        </ul>
-                 </nav>
             </header>
             )}
 
