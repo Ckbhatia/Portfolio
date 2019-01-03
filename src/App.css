@@ -1,8 +1,17 @@
+:root {
+  --main-color: rgb(167, 141, 30);
+  --color: rgb(61, 192, 176);
+  --nav-bg-color: rgba(255, 255, 255, 0.767);
+  --white-color: rgb(255, 255, 255);
+  --width: 100%;
+  --height: 100%;
+}
+
 /*------ Body ---------*/
 body, html {
-  width: 100%;
+  width: var(--width);
   position: relative;
-  height: 100%;
+  height: var(--height);
   margin: 0;
   padding: 0;
   scroll-behavior: smooth; /* Added this for smooth scrolling */
@@ -16,8 +25,8 @@ body, html {
   display: none;
   cursor: pointer;
   position: fixed;
-  background-color: rgba(255, 255, 255, 0.767);
-  width: 100%;
+  background-color: var(--nav-bg-color);
+  width: var(--width);
   z-index: 1001;
 }
 .bar1, .bar2, .bar3 {
@@ -44,15 +53,15 @@ body, html {
   padding: 0;
   position: fixed;
   display: inline-flex;
-  width: 100%;
-  background-color: rgba(255, 255, 255, 0.767);
+  width: var(--width);
+  background-color: var(--nav-bg-color);
   z-index: 1000; /* For stacking */
 }
 /* navbar links hover */
 li a:hover {
-  color: rgb(61, 192, 176);
+  color: var(--color);
   border-radius: 10px;
-  border: 1px solid rgb(167, 141, 30);
+  border: 1px solid var(--main-color);
   padding: 0.5em 1em;
 }
 /* -------- NavBar for desktop / tab --------- */
@@ -62,10 +71,10 @@ li a:hover {
 }
 .intro {
   font-family: "Alegreya Sans", sans-serif;
-  color: rgb(167, 141, 30);
+  color: var(--main-color);
   text-align: center;
-  height: 100%;
-  width: 100%;
+  height: var(--height);
+  width: var(--width);
   overflow: hidden;
 }
 h1 {
@@ -73,7 +82,7 @@ h1 {
 }
 /* Heading */
 .intro > h2 {
-  color: rgb(61, 192, 176);
+  color: var(--color);
   font-size: 2.5em;
 }
 .intro > p {
@@ -84,13 +93,13 @@ h1 {
 /* -------------- Skills -------------- */
 .skills {
   text-align: center;
-  height: 100%;
+  height: var(--height);
   margin-left: 10px;
   margin-right: 10px;
 }
 .skills > span {
-  color: rgb(255, 255, 255);
-  background-color: rgb(61, 192, 176);
+  color: var(--white-color);
+  background-color: var(--color);
   margin: 1em;
   padding: 0.5em;
   width: 6em;
@@ -99,7 +108,7 @@ h1 {
 }
 /* -------------- Projects -------------- */
 .projects {
-  background-color: #ffffff;
+  background-color: var(--white-color);
   text-align: center;
   padding: 1em;
 }
@@ -111,7 +120,7 @@ h1 {
   justify-content: center;
 }
 .project {
- /*background-color: rgb(61, 192, 176);
+ /*background-color: var(--color);
  */
   background-image: linear-gradient(141deg, #6cc7a0 0%, #1fc8db 51%, #2cb5e8 75%);
   height: 290px;
@@ -123,14 +132,14 @@ h1 {
   box-shadow: 4px 4px 4px 2px rgb(153, 128, 128);
 }
 h3 {
-  color: rgb(255, 255, 255);
+  color: var(--white-color);
 }
 h2 {
-  color: rgb(61, 192, 176);
+  color: var(--color);
   font-size: 30pt;
 }
 .projText {
-  color: white;
+  color: var(--white-color);
   font-size: 1em;
 }
 /*----------- Transition effect --------------*/
@@ -143,8 +152,8 @@ h2 {
 /* position the front and back side */
 .prj {
   position: relative;
-  width: 100%;
-  height: 100%;
+  width: var(--width);
+  height: var(--height);
   text-align: center;
   transition: transform 0.8s;
   transform-style: preserve-3d;
@@ -156,21 +165,21 @@ h2 {
 /* Position the front and back side */
 .project-front, .project-back {
   position: absolute;
-  width: 100%;
-  height: 100%;
+  width: var(--width);
+  height: var(--height);
   backface-visibility: hidden;
 }
 /* Style the back side */
 .project-back {
   background-color: rgb(123, 126, 129);
-  color: white;
+  color: var(--white-color);;
   border-radius: 4px;
   transform: rotateY(180deg);
 }
 /*Figcaption Testing*/
 /* -------------- Buttons --------------- */
 .btn {
-  color: white;
+  color: var(--white-color);
   cursor: pointer;
   background-color: rgb(2, 2, 2);
   padding: 2px;
@@ -183,7 +192,7 @@ h2 {
 }
 /* BUtton 2 (LIVE) */
 .btn2 {
-  color: white;
+  color: var(--white-color);
   font-weight: bold;
   cursor: pointer;
   padding: 2px;
@@ -198,39 +207,39 @@ h2 {
 .social-links {
   text-align: center;
   height: 30px;
-  width: 100%;
+  width: var(--width);
 }
 .link {
-  background-color: white;
-  color: rgb(167, 141, 30);
+  background-color: var(--white-color);
+  color: var(--main-color);;
   border: 1px solid #00ffff;
   border-radius: 360px;
-  margin: 16px;
-  padding: 10px;
+  margin: 0.3em;
+  padding: 0.5em;
   text-decoration: none;
 }
 .link:hover {
   color: cyan;
-  background-color: white;
+  background-color: var(--white-color);
 }
 #footerText {
-  color: white;
-  font-family: Georgia, 'Times New Roman', Times, serif;
+  color: var(--white-color);
+  font-family: Arial, Helvetica, sans-serif;
   font-size: 12pt;
   line-height: 18px;
   background: rgb(47, 39, 39);
   text-align: center;
-  padding: 8px;
-  margin-top: 8px;
+  padding: 0.5em;
+  margin-top: 0.3em;
 }
 /*------------------ Media queries -------------------*/
 /* Only for Navbar */
-@media only screen and (max-width: 1500px) {
+@media screen and (max-width: 1500px) {
   /*-------- Navbar ---------*/
   li a {
       font-size: 1.2em;
       display: block;
-      color: rgb(167, 141, 30);
+      color: var(--main-color);
       float: left;
       text-align: center;
       padding: 0.5em 1em;
@@ -249,7 +258,7 @@ h2 {
  }
 }
 /* Big screen */
-@media only screen and (min-width: 980px) {
+@media screen and (min-width: 980px) {
   img {
       height: 190px;
       width: 322px;
@@ -259,7 +268,7 @@ h2 {
  }
 }
 /*------------ Break point ------------*/
-@media only screen and (max-width: 979px) {
+@media screen and (max-width: 979px) {
   img {
       height: 180px;
       width: 310px;
@@ -271,7 +280,7 @@ h2 {
  }
 }
 /* Width 940px */
-@media only screen and (max-width: 940px) {
+@media screen and (max-width: 940px) {
   img {
       height: 160px;
       width: 280px;
@@ -282,7 +291,7 @@ h2 {
  }
 }
 /* Laptop/desktop screen */
-@media only screen and (max-width: 900px) {
+@media screen and (max-width: 900px) {
   img {
       height: 150px;
       width: 250px;
@@ -300,7 +309,7 @@ h2 {
  }
 }
 /* -------- width 780 -------- */
-@media only screen and (max-width: 780px) {
+@media screen and (max-width: 780px) {
   img {
       height: 130px;
       width: 220px;
@@ -312,7 +321,7 @@ h2 {
  }
 }
 /* -------- width 750 -------- */
-@media only screen and (max-width: 750px) {
+@media screen and (max-width: 750px) {
   img {
       height: 120px;
       width: 200px;
@@ -324,7 +333,7 @@ h2 {
  }
 }
 /* ------- width 620 -------- */
-@media only screen and (max-width: 620px) {
+@media screen and (max-width: 620px) {
   img {
       height: 100px;
       width: 180px;
@@ -335,7 +344,7 @@ h2 {
  }
 }
 /* media query for Hamburger */
-@media only screen and (max-width: 575px) {
+@media screen and (max-width: 575px) {
   #nav-container {
     text-align: center;
  }
@@ -347,18 +356,18 @@ h2 {
  }
  /* Mobile view id */
   .nav {
-      width: 100%;
+      width: var(--width);
       list-style-type: none;
       margin: 0;
       padding: 0;
       display: grid;
       position: fixed;
-      background-color: rgba(255, 255, 255, 0.767);
+      background-color: var(--nav-bg-color);
  }
   li a {
       font-size: 1.2em;
       display: block;
-      color: rgb(167, 141, 30);
+      color: var(--main-color);
       float: none;
       text-align: center;
       padding: 10px;
@@ -367,14 +376,14 @@ h2 {
  }
  /* navbar links hover */
   li a:hover {
-      color: rgb(61, 192, 176);
+      color: var(--color);
       border-radius: 0;
       border: none;
       padding: 10px;
  }
 }
 /* ------- width 560 -------- */
-@media only screen and (max-width: 560px) {
+@media screen and (max-width: 560px) {
   img {
       height: 95px;
       width: 170px;
@@ -385,7 +394,7 @@ h2 {
  }
 }
 /* ------- width 526 -------- */
-@media only screen and (max-width: 526px) {
+@media screen and (max-width: 526px) {
   img {
       height: 90px;
       width: 160px;
@@ -396,7 +405,7 @@ h2 {
  }
 }
 /* ------- width 480 -------- */
-@media only screen and (max-width: 480px) {
+@media screen and (max-width: 480px) {
   img {
       height: 95px;
       width: 150px;
@@ -407,7 +416,7 @@ h2 {
  }
 }
 /* ------- width 471 -------- */
-@media only screen and (max-width: 471px) {
+@media screen and (max-width: 471px) {
   img {
       height: 80px;
       width: 140px;
@@ -418,7 +427,7 @@ h2 {
  }
 }
 /* ------- width 440 -------- */
-@media only screen and (max-width: 440px) {
+@media screen and (max-width: 440px) {
   img {
       height: 80px;
       width: 130px;
@@ -438,7 +447,7 @@ h2 {
       margin-right: 5%;
  }
 }
-@media only screen and (max-width: 420px) {
+@media screen and (max-width: 420px) {
   .intro > p {
       font-size: 1.2rem;
       margin-left: 4%;
@@ -464,7 +473,7 @@ h2 {
       font-size: 10pt;
  }
 }
-@media only screen and (max-width: 320px) {
+@media screen and (max-width: 320px) {
   img {
       height: 46%;
       width: 90%;
