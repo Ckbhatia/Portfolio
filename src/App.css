@@ -17,9 +17,6 @@ body, html {
   scroll-behavior: smooth; /* Added this for smooth scrolling */
 }
 
-/*------------- Experiment Ground ---------*/
-
-/*--- Note: this is for experiment some features ---*/
 /*------------ NavBar ------------*/
 .container {
   display: none;
@@ -50,7 +47,7 @@ body, html {
 .navbar {
   list-style-type: none;
   margin: 0;
-  padding: 0;
+  padding: 0.5rem 1rem;
   position: fixed;
   display: inline-flex;
   width: var(--width);
@@ -61,13 +58,13 @@ body, html {
 li a:hover {
   color: var(--color);
   border-radius: 10px;
-  border: 1px solid var(--main-color);
-  padding: 0.5em 1em;
+  border: 0.05rem solid var(--main-color);
+  padding: 0.4rem 0.9rem;
 }
 /* -------- NavBar for desktop / tab --------- */
 /*------------- Main intro ---------------*/
 #main {
-  padding-top: 3em;
+  padding-top: 8rem;
 }
 .intro {
   font-family: "Alegreya Sans", sans-serif;
@@ -78,15 +75,15 @@ li a:hover {
   overflow: hidden;
 }
 h1 {
-  font-size: 2em;
+  font-size: 2rem;
 }
 /* Heading */
 .intro > h2 {
   color: var(--color);
-  font-size: 2.5em;
+  font-size: 2.5rem;
 }
 .intro > p {
-  font-size: 1.4em;
+  font-size: 1.4rem;
   margin-left: 8%;
   margin-right: 8%;
 }
@@ -100,17 +97,35 @@ h1 {
 .skills > span {
   color: var(--white-color);
   background-color: var(--color);
-  margin: 1em;
-  padding: 0.5em;
-  width: 6em;
+  margin: 1rem;
+  padding: 0.5rem;
+  width: 6rem;
   border-radius: 4px;
   display: inline-block;
+  animation-name: pop-up-skills;
+  animation-duration: 3s;
 }
+@keyframes pop-up-skills {
+  0% {
+    margin-bottom: 150px;
+    color: transparent;
+    padding: 0px;
+  }
+  50% {
+    margin-top: 100px;
+    color: rgb(112, 110, 110);
+  }
+  100% {
+    color: rgb(192, 187, 187);
+  }
+}
+
+
 /* -------------- Projects -------------- */
 .projects {
   background-color: var(--white-color);
   text-align: center;
-  padding: 1em;
+  padding: 1rem;
 }
 /*------------- Project ---------------*/
 .project-container {
@@ -120,16 +135,27 @@ h1 {
   justify-content: center;
 }
 .project {
- /*background-color: var(--color);
- */
   background-image: linear-gradient(141deg, #6cc7a0 0%, #1fc8db 51%, #2cb5e8 75%);
   height: 290px;
   width: 35%;
   border-radius: 2px;
   box-shadow: 2px 2px 2px 2px rgb(153, 128, 128);
+  animation-name: pop-up-project;
+  animation-duration: 3s;
 }
 .project:hover {
   box-shadow: 4px 4px 4px 2px rgb(153, 128, 128);
+}
+@keyframes pop-up-project {
+  0% {
+    transform: scale(0.2);
+  }
+  50% {   
+    transform: scale(0.8);
+  }
+  100% {
+    transform: scale(1);
+  }
 }
 h3 {
   color: var(--white-color);
@@ -140,7 +166,7 @@ h2 {
 }
 .projText {
   color: var(--white-color);
-  font-size: 1em;
+  font-size: 1rem;
 }
 /*----------- Transition effect --------------*/
 .prj {
@@ -176,7 +202,6 @@ h2 {
   border-radius: 4px;
   transform: rotateY(180deg);
 }
-/*Figcaption Testing*/
 /* -------------- Buttons --------------- */
 .btn {
   color: var(--white-color);
@@ -214,8 +239,8 @@ h2 {
   color: var(--main-color);;
   border: 1px solid #00ffff;
   border-radius: 360px;
-  margin: 0.3em;
-  padding: 0.5em;
+  margin: 0.3rem;
+  padding: 0.5rem;
   text-decoration: none;
 }
 .link:hover {
@@ -229,20 +254,20 @@ h2 {
   line-height: 18px;
   background: rgb(47, 39, 39);
   text-align: center;
-  padding: 0.5em;
-  margin-top: 0.3em;
+  padding: 0.5rem;
+  margin-top: 0.3rem;
 }
 /*------------------ Media queries -------------------*/
 /* Only for Navbar */
-@media screen and (max-width: 1500px) {
+@media screen and (max-width: 1636px) {
   /*-------- Navbar ---------*/
   li a {
-      font-size: 1.2em;
+      font-size: 1.2rem;
       display: block;
       color: var(--main-color);
       float: left;
       text-align: center;
-      padding: 0.5em 1em;
+      padding: 0.5rem 1rem;
       text-decoration: none;
       margin: 2px;
  }
@@ -365,7 +390,7 @@ h2 {
       background-color: var(--nav-bg-color);
  }
   li a {
-      font-size: 1.2em;
+      font-size: 1.2rem;
       display: block;
       color: var(--main-color);
       float: none;
@@ -436,10 +461,10 @@ h2 {
       height: 185px;
  }
   h1 {
-      font-size: 1.8em;
+      font-size: 1.8rem;
  }
   .intro > h2 {
-      font-size: 2.2em;
+      font-size: 2.2rem;
  }
   .intro > p {
       font-size: 1.3rem;
@@ -462,9 +487,9 @@ h2 {
       columns: auto auto auto auto;
  }
   .project {
-      height: 180px;
+      height: 192px;
       width: 60%;
-      margin: 1em;
+      margin: 1rem;
  }
   h3 {
       font-size: 12pt;
@@ -482,7 +507,7 @@ h2 {
       max-height: 192px;
       min-height: 182px;
       width: 60%;
-      margin: 1em;
+      margin: 1rem;
  }
   h3 {
       font-size: 10pt;
