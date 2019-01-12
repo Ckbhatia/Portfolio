@@ -4,9 +4,6 @@ import Navbar from './Navbar.jsx';
 import Footer from './Footer.jsx';
 import {Projects, FeaturedProjects} from './Projects.jsx';
 
-//Temp import
-//import { FontAwesomeIcons } from '@fortawesome/react-fontawesome';
-
 
 export default class Main extends Component {
     
@@ -31,7 +28,7 @@ export default class Main extends Component {
                     </div>
                 </main>
                 <section id="skills" className="skills">
-                <h2>Skills</h2>
+                    <h2>Skills</h2>
                 {/* Create skills dynamic */}
                  {skills.map((skill, index) => (
                     <span key={index}>{skill}</span>
@@ -39,7 +36,7 @@ export default class Main extends Component {
                 </section>
                 {/* Id: projects used for just navigation */}
                 <section id="projects" className="projects">
-                <h2>Featured Projects</h2>
+                    <h2>Featured Projects</h2>
                 <div className="project-container">
                     <FeaturedProjects />
                 </div>
@@ -48,12 +45,10 @@ export default class Main extends Component {
                 <section className="projects">
                     <h2>Projects</h2>
                 <div className="project-container">
-                <Projects />
+                    <Projects />
                 </div>
                 </section>
-
-                <Footer />
-
+                    <Footer />
             </div>
         )
     }
