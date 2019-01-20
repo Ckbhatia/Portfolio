@@ -59,7 +59,7 @@ export const Projects =()=> {
     const projectsUrl = ['frontend-nanodegree-arcade-game', 'fend-project-memory-game', 'React-random-color-picker', 'Ckbhatia.github.io', 'project/editor/XWMgkQ', 'pen/zWbVwE'];
     
     //Array of the live url of the projects
-    const liveUrl = ['','','','portfolio','project/full/169293', 'full/zWbVwE'];
+    const liveUrl = ['frontend-nanodegree-arcade-game/','fend-project-memory-game/#','','portfolio','project/full/169293', 'full/zWbVwE'];
     
     //Array of the store details of the projects
     const details = [['Classic video game'] ,['It’s a shnazzy memory game!'], ['React Random color app. Just Fun App!'], ['Static portfolio'], ['Creative pixel art maker tool'],
