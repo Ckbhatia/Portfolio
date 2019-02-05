@@ -1,22 +1,19 @@
 import React, { Component } from 'react';
 import '../App.css';
-import Navbar from './Navbar.jsx';
-import Footer from './Footer.jsx';
-import {Projects, FeaturedProjects} from './Projects.jsx';
-
-//Temp import
-//import { FontAwesomeIcons } from '@fortawesome/react-fontawesome';
+import Navbar from './Navbar';
+import Footer from './Footer';
+import {Projects, FeaturedProjects} from './Projects';
 
 
 export default class Main extends Component {
     
     render() {
         
-        const skills = ["HTML5" ,"JavaScript", "CSS3", "React", "VanilaJs", "jQuery",
+        const skills = ["HTML5" ,"JavaScript", "CSS3", "React", "Redux", "VanilaJs", "jQuery",
          "Python", "Gulp", "CSS Grid", "Flex box", "Git", "Github", "Bootstrap 4", "Sql","Jasmine Testing", "Heroku", "HTML Canvas", "Shell", "Sass"];
 
         return (
-            <div>
+            <React.Fragment>
                 <Navbar />
                 <main id="main">
                     <div id="about" className="intro">
@@ -51,10 +48,8 @@ export default class Main extends Component {
                 <Projects />
                 </div>
                 </section>
-
                 <Footer />
-
-            </div>
+            </React.Fragment>
         )
     }
 }
