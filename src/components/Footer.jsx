@@ -3,7 +3,7 @@ import '../App.css';
 
 const Footer=()=> {
     return (
-        <div id="contact" className='footer'>
+        <div className='footer'>
         <div role="link" className="social-links">
         <a className="link" href="https://www.linkedin.com/in/chetan-kumar86" target="_blank" rel="noopener noreferrer" >Linkedin</a>
         <a className="link" href="https://github.com/Ckbhatia" target="_blank" rel="noopener noreferrer" >Github</a>
