@@ -228,6 +228,56 @@ h2 {
 .btn2:hover {
   color: rgba(255, 0, 0, 0.815);
 }
+/*----------- Contact -------------*/
+#contact {
+  margin: 4em 0 6em 0;
+  text-align: center;
+}
+
+#name-field {
+  padding: 0.4rem;
+  margin: 0.5rem;
+  border-radius: 4px;
+}
+
+#email-field {
+  padding: 0.4rem;
+  margin: 0.5rem;
+  border-radius: 4px;
+}
+
+#message-field {
+  padding: 0.4rem;
+  margin: 0.5rem;
+  border-radius: 4px;
+}
+
+#submit-btn {
+  color: var(--main-color);
+  background-color: transparent;
+  border-color: var(--main-color);
+  border-radius: 0.4rem;
+}
+#submit-btn:hover {
+  color: var(--color);
+  border-color: var(--color);
+  cursor: pointer;
+}
+
+/* 2nd heading */
+.cont-h {
+  text-align: center;
+  color: var(--main-color);
+}
+/* paragraph */
+.cont-p {
+  text-align: center;
+  color: var(--main-color);
+}
+.form-container {
+  text-align: center;
+}
+
 /*----------- Footer -------------*/
 .social-links {
   text-align: center;
