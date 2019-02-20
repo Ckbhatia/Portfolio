@@ -3,10 +3,9 @@ import '../App.css';
 import Navbar from './Navbar';
 import Footer from './Footer';
 import {Projects, FeaturedProjects} from './Projects';
-
+import Contact from './Contact';
 
 export default class Main extends Component {
-    
     render() {
         
         const skills = ["HTML5" ,"JavaScript", "CSS3", "React", "Redux", "VanilaJs", "jQuery",
@@ -28,26 +27,27 @@ export default class Main extends Component {
                     </div>
                 </main>
                 <section id="skills" className="skills">
-                <h2>Skills</h2>
+                    <h2>Skills</h2>
                 {/* Create skills dynamic */}
-                 {skills.map((skill, index) => (
+                    {skills.map((skill, index) => (
                     <span key={index}>{skill}</span>
-                ))}
+                    ))}
                 </section>
                 {/* Id: projects used for just navigation */}
                 <section id="projects" className="projects">
-                <h2>Featured Projects</h2>
-                <div className="project-container">
-                    <FeaturedProjects />
-                </div>
+                    <h2>Featured Projects</h2>
+                    <div className="project-container">
+                        <FeaturedProjects />
+                    </div>
                 </section>
                 
                 <section className="projects">
                     <h2>Projects</h2>
-                <div className="project-container">
-                <Projects />
-                </div>
+                    <div className="project-container">
+                        <Projects />
+                    </div>
                 </section>
+                <Contact />
                 <Footer />
             </React.Fragment>
         )
