@@ -1,44 +1,37 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# Portfolio react app
+This is simple portfolio app of chetan kumar. This app shows projects, skills and other important information about myself.
 
-## Available Scripts
 
-In the project directory, you can run:
+## Snapshots
 
-### `npm start`
+* Main page - about
 
-Runs the app in the development mode.<br>
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+<a href="https://ibb.co/GF0BggM"><img src="https://i.ibb.co/HXV1mmP/Screenshot-399.png" alt="Main-page" border="0"></a>
 
-The page will reload if you make edits.<br>
-You will also see any lint errors in the console.
 
-### `npm test`
+* Featured projects
 
-Launches the test runner in the interactive watch mode.<br>
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+<a href="https://ibb.co/8Nw9Mnv"><img src="https://i.ibb.co/k5TXKVb/Screenshot-401.png" alt="Screenshot-401" border="0"></a>
 
-### `npm run build`
+* Projects
 
-Builds the app for production to the `build` folder.<br>
-It correctly bundles React in production mode and optimizes the build for the best performance.
+<a href="https://ibb.co/5WfqtV5"><img src="https://i.ibb.co/MD3qWLR/Screenshot-402.png" alt="Screenshot-402" border="0"></a>
 
-The build is minified and the filenames include the hashes.<br>
-Your app is ready to be deployed!
+* Footer - contact
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+<a href="https://ibb.co/kGpzbGP"><img src="https://i.ibb.co/b6xYw6G/Screenshot-403.png" alt="Screenshot-403" border="0"></a>
 
-### `npm run eject`
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+### How to use or launch this app?
+1. You can simple clone this repo to your local machine or just visit the url : https://ckportfolio.netlify.com
+2. Make sure you installed yarn or npm to run the app.
+3. You can navigate to downloaded app folder then open the cmd or git cmd.
+4. Type 'yarn start' or 'npm start'.
+5. Open the given address in your preferred browser.
+6. Explore the app functionality and check information.
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## Technologies
+* ReactJs, HTML, CSS, CSS Grids and Flex box etc.
 
-Instead, it will copy all the configuration files and the transitive dependencies (Webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
+### Author
+* **Chetan kumar**
